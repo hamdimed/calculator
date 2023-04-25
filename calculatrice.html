@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="display">
+          <input type="text" id="result" readonly>
+        </div>
+        <div class="keys">
+          <button class="clear" onclick="clearScreen()">C</button>
+          <button class="operator" onclick="addOperator('/')">/</button>
+          <button class="operator" onclick="addOperator('*')">x</button>
+          <button onclick="addToScreen('7')">7</button>
+          <button onclick="addToScreen('8')">8</button>
+          <button onclick="addToScreen('9')">9</button>
+          <button class="operator" onclick="addOperator('-')">-</button>
+          <button onclick="addToScreen('4')">4</button>
+          <button onclick="addToScreen('5')">5</button>
+          <button onclick="addToScreen('6')">6</button>
+          <button class="operator" onclick="addOperator('+')">+</button>
+          <button onclick="addToScreen('1')">1</button>
+          <button onclick="addToScreen('2')">2</button>
+          <button onclick="addToScreen('3')">3</button>
+          <button class="operator" onclick="calculate()">=</button>
+          <button class="zero" onclick="addToScreen('0')">0</button>
+          <button onclick="addToScreen('.')">.</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

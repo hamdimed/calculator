@@ -1,0 +1,21 @@
+// Ajouter un événement clic sur tous les boutons numériques
+$('.number').click(function() {
+  var number = $(this).val();
+  addToScreen(number);
+});
+
+// Ajouter un événement clic sur le bouton C pour effacer l'écran
+$('#clear').click(function() {
+  clearScreen();
+});
+
+// Ajouter un événement clic sur les boutons d'opérateurs
+$('.operator').click(function() {
+  var op = $(this).val();
+  addOperator(op);
+});
+
+// Ajouter un événement clic sur le bouton égal pour calculer le résultat
+$('#equals').click(function() {
+  calculate();
+});
